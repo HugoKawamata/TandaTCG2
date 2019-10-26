@@ -70,11 +70,12 @@ const HomePage = ({ signIn, token, currentConnection, connections }) => {
               display: 'flex', 
               alignItems: 'center', 
               justifyContent: 'space-between', 
-              height: '100%'
           }}>
             <Main
               feedItems={feedItems}
               collection={cards}
+              percentage={50}
+              multiplier={1.8}
             />
           </div>
       } </div>
