@@ -28,11 +28,29 @@ const HomePage = ({ signIn, token, currentConnection, connections }) => {
       width: '100%'
     }
   }
+  var today = new Date();
+  var time = today.getHours() + ":" + today.getMinutes();
 
   const feedItems = [{
     user: 'Hugo Kawamata',
     target: 'Rohan Laidlaw',
     cardClass: 'Charlie, the Sandwich King',
+    time: time,
+  },{
+    user: 'pee poo',
+    target: 'Rohan Laidlaw',
+    cardClass: 'Charlie, the Sandwich King',
+    time: time,
+  },{
+    user: 'FirstNAme LAstNAme',
+    target: 'Rohan Laidlaw',
+    cardClass: 'Charlie, the Sandwich King',
+    time: time,
+  },{
+    user: 'Hugo Kawamata',
+    target: 'Rohan Laidlaw',
+    cardClass: 'Charlie, the Sandwich King',
+    time: time,
   }]
 
   const cards = [{
