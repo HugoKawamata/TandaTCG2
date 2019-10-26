@@ -48,24 +48,64 @@ body {
 .left-side {
 }
 
+.user-info-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .card-progress-wrapper {
-  display: flex;
+	display: flex;
+	flex-direction: column;
+	width: 700px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.section-title {
+	font-weight: 800;
+	margin-bottom: 20px;
+	font-size: 30px;
+	text-align: center;
 }
 
 .card-progress-bar-wrapper {
   display: flex;
   flex-direction: row;
-  border-radius: 4;
-  height: 80;
-  width: 300;
+	height: 30px;
+	width: 100%;
+	border: 1px #222 solid;
 }
 
 .filler {
-  background-color: #ff0000;
+	background-color: #ff0000;
 }
 
-.text-wrapper {
+.progress-text-wrapper {
+	margin-top: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.collection-section-wrapper {
+
+}
+
+.collection-wrapper {
+	display: flex;
+	flex-direction: row
+}
+
+.card-wrapper {
+	margin: 10px;
+}
+
+.card {
+	width: 300px;
+}
+
+.card-charges {
+	margin-top: 10px;
+	text-align: center;
 }

@@ -16,7 +16,7 @@ export default (props) => (
       </div>
       <div className="right-side">
         <div className="user-info-wrapper">
-          <CardProgress />
+          <CardProgress percentage={props.percentage} multiplier={props.multiplier} />
           <Collection collection={props.collection} />
         </div>
       </div>
