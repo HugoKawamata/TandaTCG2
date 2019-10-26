@@ -37,7 +37,13 @@ const HomePage = ({ signIn, token, currentConnection, connections }) => {
 
   const cards = [{
     image: "https://imgur.com/Piw45ru.png",
-    charges: 2
+    charges: 2,
+  }, {
+    image: "https://imgur.com/vrigUJV.png",
+    charges: 3,
+  }, {
+    image: "https://imgur.com/LtZAQm3.png",
+    charges: 3,
   }]
   
   return (
