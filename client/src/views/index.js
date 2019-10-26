@@ -36,13 +36,19 @@ const HomePage = ({ signIn, token, currentConnection, connections }) => {
   }]
 
   const cards = [{
-    image: "https://imgur.com/Piw45ru.png",
+    image: "https://i.imgur.com/Piw45ru.png",
     charges: 2,
   }, {
-    image: "https://imgur.com/vrigUJV.png",
+    image: "https://i.imgur.com/vrigUJV.png",
     charges: 3,
   }, {
-    image: "https://imgur.com/LtZAQm3.png",
+    image: "https://i.imgur.com/mTvWAzt.png",
+    charges: 6,
+  }, {
+    image: "https://i.imgur.com/uD4IzZN.png",
+    charges: 6,
+  }, {
+    image: "https://i.imgur.com/LtZAQm3.png",
     charges: 3,
   }]
   
@@ -52,6 +58,7 @@ const HomePage = ({ signIn, token, currentConnection, connections }) => {
               display: 'flex', 
               alignItems: 'center', 
               justifyContent: 'space-between', 
+              width: "100%"
           }}>
             <Main
               feedItems={feedItems}
