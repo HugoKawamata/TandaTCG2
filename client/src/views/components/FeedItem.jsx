@@ -2,16 +2,10 @@
 
 import React from 'react';
 
-// export type Props = {
-//   sender: string,
-//   recipient: string,
-//   cardClass: string,
-// }
-
 function FeedItem(props) {
   return (
     <div className="feed-item">
-      <p>{`${props.sender}`}</p>
+      <p>{`${props.user}`}</p>
     </div>
   );
 }

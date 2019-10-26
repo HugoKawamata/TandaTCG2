@@ -16,16 +16,5 @@ export default (props) => (
           </p>
         </div>
       ))}
-      <div className="">
-        <div className="filler" style={{ width: `${props.percentage}%` }} />
-      </div>
-      <div className="text-wrapper">
-        <div className="percentage">
-          {props.percentComplete}%
-        </div>
-        <div className="multiplier">
-          {props.multiplier}x
-        </div>
-      </div>
     </div>
 );

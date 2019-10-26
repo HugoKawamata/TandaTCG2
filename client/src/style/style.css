@@ -12,7 +12,7 @@ body {
 	margin: 0;
 	font-weight: 100;
 	letter-spacing: 2px;
-	font-family: 'Roboto', sans-serif;
+	font-family: Roboto, sans-serif;
 }
 
 .bg_primary-color {
@@ -40,21 +40,21 @@ body {
 /* MY STUFF */
 
 .main-wrapper {
-  display: 'flex';
-  flex-direction: 'row';
-  justify-content: 'flex-start';
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .left-side {
 }
 
 .card-progress-wrapper {
-  display: 'flex';
+  display: flex;
 }
 
 .card-progress-bar-wrapper {
-  display: 'flex';
-  flex-direction: 'row';
+  display: flex;
+  flex-direction: row;
   border-radius: 4;
   height: 80;
   width: 300;
@@ -65,7 +65,7 @@ body {
 }
 
 .text-wrapper {
-  display: 'flex';
-  flex-direction: 'row';
-  justify-content: 'space-between';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
