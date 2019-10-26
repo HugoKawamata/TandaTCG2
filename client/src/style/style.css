@@ -92,7 +92,6 @@ body {
 
 }
 
-<<<<<<< HEAD
 .feed{
   display: flex;
   flex-direction: column;
@@ -100,7 +99,6 @@ body {
 }
 
 
-=======
 .collection-wrapper {
 	display: flex;
 	flex-direction: row
@@ -118,4 +116,3 @@ body {
 	margin-top: 10px;
 	text-align: center;
 }
->>>>>>> b55f46650cf24a8d772fe6e84460952bfcd4b171
