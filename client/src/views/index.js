@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import queryString from 'query-string';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography'
+import IconButton from '@material-ui/core/IconButton';
+// import MenuIcon from '@material-ui/icons/Menu';
 import { signIn } from './actions';
 import { List, ListItem as Item, Divider } from '@material-ui/core'
 import Main from './components/Main'
@@ -29,12 +34,13 @@ const HomePage = ({ signIn, token, currentConnection, connections }) => {
     }
   }
   var today = new Date();
-  var time = today.getHours() + ":" + today.getMinutes();
+  var time = today.getHours() + ":" + (today.getMinutes() - 10);
 
   const feedItems = [{
     user: 'Hugo Kawamata',
     target: 'Rohan Laidlaw',
-    cardClass: 'Charlie, the Sandwich King',
+    cardClass: 'Peter Greenwood, Ph.D',
+    image: 'https://i.imgur.com/mTvWAzt.png',
     time: time,
   },{
     user: 'pee poo',
@@ -78,6 +84,16 @@ const HomePage = ({ signIn, token, currentConnection, connections }) => {
               justifyContent: 'space-between', 
               width: "100%"
           }}>
+            <AppBar >
+              <Toolbar>
+                <IconButton edge="start" className="menuButton" color="inherit" aria-label="menu">
+                  {/* <MenuIcon /> */}
+                </IconButton>
+                <Typography variant="h6" className="title">
+                  TandaTCG
+                </Typography>
+              </Toolbar>
+            </AppBar>
             <Main
               feedItems={feedItems}
               collection={cards}

@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
   card: {
     display: 'flex',
     width: 380,
-    paddingBottom: 50,
+    marginBottom: 20,
   },
   details: {
     display: 'flex',
@@ -28,8 +28,7 @@ const useStyles = makeStyles(theme => ({
   },
   cover: {
     display: 'flex',
-    width: 100,
-    height:140
+    width: 200,
   },
 }));
 
@@ -43,7 +42,7 @@ function FeedItem(props) {
     <Card className={classes.card}>
       <CardMedia
         className={classes.cover}
-        image="https://external-preview.redd.it/2Ijucnts6aAjNs3JkcQrQEnkEkS3-VHyQn_Zepqu3Uw.png?auto=webp&s=1b44f65b1cc0c05b28cb0011421380be169a39ee"
+        image={props.image}
         title="cardImage"
       />
       <div className={classes.details}>
