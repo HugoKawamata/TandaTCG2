@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "firebase": "^5.4.0",
+    "knex": "^0.15.2",
+    "koa": "^2.5.2",
+    "koa-body": "^4.0.4",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6",
+    "pg": "^7.4.3",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "dev": "node index.js",
+    "pf": "adb reverse tcp:8163 tcp:8163"
+  },
+  "name": "pegasus-server",
+  "version": "1.0.0",
+  "description": "API to connect app to RDS",
+  "main": "index.js",
+  "author": "Lachlan Young",
+  "license": "MIT"
+}
