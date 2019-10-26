@@ -1,6 +1,5 @@
 import React from 'react';
 import FeedItem from './FeedItem';
-
 // type Props = {
 //   feedItems: Array<FeedItemProps>
 // }
@@ -17,6 +16,7 @@ function Feed(props) {
         })
       }
     </div>
+    
   );
 }
 

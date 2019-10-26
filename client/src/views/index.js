@@ -28,23 +28,41 @@ const HomePage = ({ signIn, token, currentConnection, connections }) => {
       width: '100%'
     }
   }
+  var today = new Date();
+  var time = today.getHours() + ":" + today.getMinutes();
 
   const feedItems = [{
     user: 'Hugo Kawamata',
     target: 'Rohan Laidlaw',
     cardClass: 'Charlie, the Sandwich King',
+    time: time,
+  },{
+    user: 'pee poo',
+    target: 'Rohan Laidlaw',
+    cardClass: 'Charlie, the Sandwich King',
+    time: time,
+  },{
+    user: 'FirstNAme LAstNAme',
+    target: 'Rohan Laidlaw',
+    cardClass: 'Charlie, the Sandwich King',
+    time: time,
+  },{
+    user: 'Hugo Kawamata',
+    target: 'Rohan Laidlaw',
+    cardClass: 'Charlie, the Sandwich King',
+    time: time,
   }]
 
   const cards = [{
     image: "https://imgur.com/Piw45ru.png",
-    charges: 2,
-  }, {
-    image: "https://imgur.com/vrigUJV.png",
-    charges: 3,
-  }, {
-    image: "https://imgur.com/LtZAQm3.png",
-    charges: 3,
-  }]
+    charges: 2,}]
+  // }, {
+  //   image: "https://imgur.com/vrigUJV.png",
+  //   charges: 3,
+  // }, {
+  //   image: "https://imgur.com/LtZAQm3.png",
+  //   charges: 3,
+  // }]
   
   return (
       <div style={{height: '100%'}}>

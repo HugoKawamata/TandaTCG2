@@ -69,3 +69,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.feed{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+
