@@ -50,6 +50,7 @@ const HomePage = ({ signIn, token, currentConnection, connections }) => {
           }}>
             <Main
               feedItems={feedItems}
+              collection={cards}
             />
           </div>
       } </div>

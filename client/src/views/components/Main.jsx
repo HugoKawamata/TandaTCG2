@@ -17,7 +17,7 @@ export default (props) => (
       <div className="right-side">
         <div className="user-info-wrapper">
           <CardProgress />
-          <Collection />
+          <Collection collection={props.collection} />
         </div>
       </div>
     </div>
