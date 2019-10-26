@@ -22,7 +22,6 @@ const HomePage = ({ signIn, token, currentConnection, connections }) => {
       alignItems: 'center', 
       justifyContent: 'center', 
       display: 'flex', 
-      backgroundColor: '#f2f2f2',
       minWidth: '250px'
     }, 
     signinButton: {
@@ -33,30 +32,33 @@ const HomePage = ({ signIn, token, currentConnection, connections }) => {
       width: '100%'
     }
   }
-  var today = new Date();
-  var time = today.getHours() + ":" + (today.getMinutes() - 10);
+  
+
 
   const feedItems = [{
     user: 'Hugo Kawamata',
     target: 'Rohan Laidlaw',
     cardClass: 'Peter Greenwood, Ph.D',
     image: 'https://i.imgur.com/mTvWAzt.png',
-    time: time,
+    time: "16:45 Today",
   },{
-    user: 'pee poo',
-    target: 'Rohan Laidlaw',
+    user: 'Lachlan Young',
+    target: 'Hugo Kawamata',
     cardClass: 'Charlie, the Sandwich King',
-    time: time,
+    image: 'https://i.imgur.com/Piw45ru.png',
+    time: "11:40 Yesterday",
   },{
-    user: 'FirstNAme LAstNAme',
+    user: 'Ryan Johnson',
     target: 'Rohan Laidlaw',
-    cardClass: 'Charlie, the Sandwich King',
-    time: time,
+    cardClass: 'Peter Greenwood',
+    image: "https://i.imgur.com/mTvWAzt.png",
+    time: "13:20 Today",
   },{
-    user: 'Hugo Kawamata',
-    target: 'Rohan Laidlaw',
-    cardClass: 'Charlie, the Sandwich King',
-    time: time,
+    user: 'Rohan Laidlaw',
+    target: 'Hugo Kawamata',
+    cardClass: 'Daniel Gilchrist',
+    image: "https://i.imgur.com/LtZAQm3.png",
+    time: "9:20 Yesterday",
   }]
 
   const cards = [{

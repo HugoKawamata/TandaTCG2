@@ -7,8 +7,8 @@ import FeedItem from './FeedItem';
 function Feed(props) {
   return (
     <div className="feed">
-      <header className="feed-heading">
-        Feed
+      <header className="section-title">
+        Recent Activity
       </header>
       {
         props.feedItems.map((item) => {

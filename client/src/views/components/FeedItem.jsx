@@ -13,6 +13,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     width: 380,
     marginBottom: 20,
+    height: 153
   },
   details: {
     display: 'flex',
@@ -21,14 +22,19 @@ const useStyles = makeStyles(theme => ({
   },
   timestamp: {
     display: 'flex',
-    backgroundColor: '#a2b9bc'
+    borderBottomColor: "#ababab",
+    borderBottom: 'solid',
+    borderBottomWidth: 1,
+    marginBottom: '5px',
+    paddingBottom: '5px'
+
   },
   content: {
-    flex: '1 0 auto',
+    width: 240
   },
   cover: {
     display: 'flex',
-    width: 200,
+    width: 200
   },
 }));
 
@@ -47,15 +53,14 @@ function FeedItem(props) {
       />
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Typography component="subtitle1" variant="subtitle1">
-            {`${props.user} used ${props.cardClass} on ${props.target}`}
-          </Typography>
-          <div className={classes.timestamp}>
-          <Typography component="subtitle1" variant="subtitle1">
+        <div className={classes.timestamp}>
+          <Typography component="header5" variant="header5">
             {`${props.time}`}
           </Typography>
           </div>
-          
+          <Typography component="subtitle1" variant="subtitle1">
+            {`${props.user} used ${props.cardClass} on ${props.target}`}
+          </Typography>
         </CardContent>
       </div>
       
