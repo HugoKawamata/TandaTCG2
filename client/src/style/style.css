@@ -44,6 +44,7 @@ body {
   display: flex;
   flex-direction: row;
 	justify-content: flex-start;
+	margin-top: 100px;
 }
 
 .left-side {
@@ -80,11 +81,14 @@ body {
   flex-direction: row;
 	height: 30px;
 	width: 100%;
-	border: 1px #222 solid;
+	background-color: #efefef;
+	border-radius: 13px;
+	/* border: 1px #222 solid; */
 }
 
 .filler {
-	background-color: #ff0000;
+	background-color: #3f51b5;
+	border-radius: 13px;
 }
 
 .progress-text-wrapper {
@@ -124,4 +128,15 @@ body {
 .card-charges {
 	margin-top: 10px;
 	text-align: center;
+}
+
+
+.root {
+	flex-grow: 1;
+}
+.menuButton {
+	margin-right: 20
+}
+.title {
+	flex-grow: 1;
 }
